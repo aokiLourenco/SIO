@@ -664,3 +664,264 @@ Every program and every user of the system should opereate using the least set o
 
 ## Access control kinds: RBAC rules (1/2)
 
+- **Role assignment**
+    - All subject activity on the system is conducted through transactions: And transactions are allows to specific roles; Thus, all active subjects are required to have some active role
+
+    - A subject execute a transaction **iff** it has selected or been assignes a role which can use the transaction
+
+
+## Access control kinds: RBAC rules (2/2)
+
+- **Role authorization**
+    - A suject's active role must be authorized for the subject
+
+- **Transaction authorization:**
+  - A subject xan execute a transaction **iff**: the transaction is authorized through the subject's role memberships
+  - and: there are no other constraints that may be applied across subjects, roles, and permissions
+
+------------------------------
+
+![](image-9.png)
+
+------------------------------
+
+## RBAC: Roles vs groups
+
+- **Roles are a collection of permissions**
+  - The permissions are granted to the subjects that, at a given instant, play the role
+  - A subject can (should) only play a role at a given time
+
+- **Groups are a collection of users**
+  - And permissions can be granted both to users and groups
+  - A subject can belong to many groups at a given time
+
+- **The session concept**
+  - Role assignment is like a session activation
+  - Group menbership is ordinarily a static attribute
+
+------------------------------
+
+## RBAC variants
+
+![](image-10.png)
+
+- **RBAC 0**
+  - No role hierarchies
+  - No role constraints
+
+- **RBAC 1**
+  - RBAC 0 w/ role hierarchies (privilege inheritance)
+
+- **RBAC 2**
+  - RBAC 0 w/ role contraints (separation of duties)
+
+- **RBAC 3**
+  - RBAC 1 + RBAC 2
+
+------------------------------
+
+## NIST RBAC model
+
+- **Flat RBAC**
+  - Simple RBAC model w/ **user-role review**
+
+- **Hierarchical RBAC**
+  - Flat RbAC w/ role hierarchies (DAg or tree)
+  - General and restricted hierarchies
+
+- **Constraint RBAC**
+  - RBAC w/ role constraints for separation of duty
+
+- **Symmetric RBAC**
+  - RBAC w/ **permission-role review**
+
+![](image-11.png)
+![](image-12.png)
+
+------------------------------
+
+## Access control kinds: Context-Based Access Control (CBAC)\
+
+- **Access rights have an historical context**
+  - The access rights cannot be determined without reasoning about past access operations
+  - Example: Stateful packet filter firewall
+
+- **Chinese Wall policy**
+  - Conflict groups
+  - Access control policies need to address past accesses to objects in different members of conlfict groups
+
+## Access control kinds: Attribute-Based Access Control (ABAC)
+
+**Access control decisions are made based on attributes associated with relevant entities**
+
+- **OASIS XACML architecture**
+  - Policy Administration Point (PAP): Where policies are managed
+  - Policy Decision Point (PDP): Where authorization decisions are evaluated and issued
+  - Policy Enforcement Point (PEP): Where resource access requests are intercepted and confronted with PDP’s decisions
+  - Policy Information Point (PIP): Where the PDP gets external information
+
+------------------------------
+
+## XACML: Access control with PEP and PDP
+
+- **A subject sends a request**
+  - Which is intercepted by the Policy Enforcement Point (PEP)
+  - The PEP send an authorization request to the Policy Decision Point (PDP)
+
+- **The PDP evaluates the authorization request against its policies and reaches a decision**
+  - Which is returned to the PEP
+  - Policies are retrives froma Policy Retrieval Point (PRP)
+  - Useful attributes are fetched from Policy Informatino Point (PIP)
+  - Policies are managed by the Plicy Administration Point (PAP)
+
+![](image-13.png)
+
+------------------------------
+
+## Break-the-glass access control model
+
+- **In some scenarios it may be required to overcome the estabilished access limitations**
+  - e.g., in a life-threatening situation
+
+- **In those cases, the subject may be presentes with a break-the-glass decision up a deny**
+  - Can overcome the deny at their own reponsibility
+  - Logging is fundamental to prevent abuses
+
+------------------------------
+
+## Separation of duties
+
+- **Fundamental security requirement for fraud and error prevention**
+  - Disseminatino of tasks and associated privileges for a specific bussiness process among multiple subjects
+  - Often implmented with RBAC
+
+- **Damage control**
+  - Segregation of suties helps reducing the potential damage from the actions of one person
+  - Some duties should not be combined into one position
+
+------------------------------
+
+## Segregation of duties
+
+![](image-14.png)
+
+------------------------------
+
+## Informatino flow models
+
+- **Authorization is applies to data flows**
+  - Considering the data flow source and destination
+  - Goal: avoid unwanted/dangerous indormation flows
+
+![](image-15.png)
+
+- **Src and Dst security-level attributes**
+  - Information flows shoulld occur only between entities with given security level (SL) attributes
+
+------------------------------
+
+## Multilevel security
+
+- **Subjects (or roles) act on different security levels**
+  - Levels do not intersect themselves
+  - Levels hame some partial order: Hierarchy; Lattice
+
+- **Levels are used as attributes of subjects and objects**
+  - Subjects: <u>security level clearance</u>
+  - Objects: <u>security classification</u>
+
+- **Information flows & security levels**
+  - Same security level -> authorized: Still, subject to a "need to know"
+  - Different security levels -> controlled
+
+------------------------------
+
+
+## Multilevel security levels: Military / Intelligence organizations
+
+![](image-16.png)
+
+------------------------------
+
+## Security categories (or compartments)
+
+- **Self contained iformatino environments**
+  - May span several security levels
+
+- **Military environments**
+  - Military branches, military units
+
+- **Civil environments**
+  - Departments, organizational units
+
+- **An object can belong to different compartments and have a different security classification in each of them**
+  - (top-secret, crypto), (secret, weapon)
+
+![](image-17.png)
+
+------------------------------
+
+## Security labels
+
+![](image-18.png)
+
+------------------------------
+
+## Bell-La Padula MLS Model
+
+- **Access control policy for controlling information flows**
+ - Addresses data confidentiality and access to classified information
+ - Addresses disclosure of classified information
+ - Object access control is not enough
+ - One needs to restrict the flow of information from a source to authorized destinations
+
+- **Uses a state-transition model**
+  - In each state there are subjects, objects, an access matrix and the current access information
+  - State transition rules
+  - Security levels and clearances
+  - Objects have a security labels
+  - Subjects have security clearances
+  - Both refer to security levels (e.g., CONFIDENTIAL)
+
+------------------------------
+
+## Bell-La Padula MLS Model: Secure state-transition model
+
+![](image-19.png)
+
+------------------------------
+
+## Biba Integrity Model
+
+![](image-20.png)
+
+------------------------------
+
+## Windows mandatory integrity control
+
+- **Allows mandatory (priority and critical) access control enforcement prior to evaluate DACLs**
+  - If access is denied, DACLs are not evaluated
+  - If access is allowed, DACLs are evaluated
+
+- **Integrity labels**
+  - Untrusted
+  - Low (or AppContainer)
+  - Medium
+  - Medium Plus
+  - High
+  - System
+  - Protected Process
+
+- **Users**
+  - <u>Medium</u>: standard users
+  - <u>High</u>: elevated users
+
+- **Process integrity level**
+  - The minimum associated to the owner and the executable file
+  - User processes usually are <u>Medium</u> or <u>High</u>: except if executing <u>Low</u>-labeled executables
+  - Service processes: <u>High</u>
+
+- **Securable objects mandatory label**
+  - <u>NO_WRITE_UP</u> (default)
+  - <u>NO_READ_UP</u>
+  - <u>NO_EXECUTE_UP</u>
