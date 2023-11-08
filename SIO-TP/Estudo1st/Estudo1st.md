@@ -19,9 +19,9 @@ Without the existence of anomalous behavior, introduced by environmental aspects
 **People** -> Staff behavior cannot have a negative impact to the solution
 Norms are in place to regulate what avtions are expected; Staff is trained to distinguish correct from incorrect behavior; Staff has the correct incentive to behave adequately; When staff is compromised, or deviate, actions have limited impact
 
-Clients and Supply Chain;
-Mechanisms;
-Standards and Laws;
+Clients and Supply Chain;<br>
+Mechanisms;<br>
+Standards and Laws;<br>
 Intellectual Property;
 
 -------------------------------
@@ -29,44 +29,44 @@ Intellectual Property;
 ### SIO ojectives:
 
 Confidentiality;
-Integrity: Information remains unchanged;
-Availability: Information is available to target entities;
-Privacy: How personal information is handled;
+Integrity: Information remains unchanged;<br>
+Availability: Information is available to target entities;<br>
+Privacy: How personal information is handled;<br>
 Measures;
 
 ------------------------------
 
 ### Security objectives:
 
-Defense against catastrophic events;
-Degradation of computer hardware;
-Defense against ordinary faults / failures;
+Defense against catastrophic events;<br>
+Degradation of computer hardware;<br>
+Defense against ordinary faults / failures;<br>
 Defense against non-authorized activities (adversaries)
 
 ------------------------------
 
 #### Core Concepts:
 
-1. Domains -> A set of entities sharing similar security attributes
-Allow managing security in an aggregated manner;
-Behavior and interactions are homogenous inside the domain;
-Domains can be organized in a flat of hierarchical manner;
-Interactions between domains are usually controlled;
+1. Domains -> A set of entities sharing similar security attributes<br>
+Allow managing security in an aggregated manner;<br>
+Behavior and interactions are homogenous inside the domain;<br>
+Domains can be organized in a flat of hierarchical manner;<br>
+Interactions between domains are usually controlled;<br>
 
 
 2. Policies -> Set of guidelines related to security, that rule over a domain
 
-Organization will contain multiple policies;
-The multiple policies  must be coherent;
-Define the power of each subject;
-Define security procedures;
-Define the minimun security requirements of a domain;
-Define defense strategies and fight back tactics;
-Define what are legal and illegal activities;
+Organization will contain multiple policies; <br>
+The multiple policies  must be coherent; <br>
+Define the power of each subject; <br>
+Define security procedures; <br>
+Define the minimun security requirements of a domain; <br>
+Define defense strategies and fight back tactics; <br>
+Define what are legal and illegal activities; <br>
 
 3. Mechanisms -> Mechanisms implement policies:
 
-Policies define, at a higher level, what needs to be done or exist
+Policies define, at a higher level, what needs to be done or exist <br>
 Mechanisms are used to deply policies
 
 4. Controls -> Controls are any aspect allowing to minimize risk (protect the CIA properties)
@@ -76,11 +76,11 @@ Controls are explicitly stated and can be auditable
 
 ------------------------------
 
-**Policy**: Movement between domains is restricted
-Mechanisms: Doors, guards, passwords, objects/documents
+**Policy**: Movement between domains is restricted<br>
+**Mechanisms**: Doors, guards, passwords, objects/documents
 
-**Mechanism**: systems must be resilient
-Mechanisms: equipments and links are doubled, arquitecture
+**Policy**: systems must be resilient
+**Mechanisms**: equipments and links are doubled, arquitecture
 
 ------------------------------
 
@@ -96,29 +96,29 @@ Mechanisms: equipments and links are doubled, arquitecture
 
 ### Practical Security: Realistic Prevention
 
-Consider Impact;
-Consider the cost and recover time;
-Characterize attackers;
+Consider Impact;<br>
+Consider the cost and recover time;<br>
+Characterize attackers;<br>
 Consider that the system will be compromised;
 
 ------------------------------
 
 ### Security in computing systems: Complex problems
 
-Computers can do much damage in short time frames;
-The number of weakness is always growing;
-Networks allow novel attack mechanisms;
-Attackers can build complex attck chains;
-Users are mostrly unaware of the risks;
+Computers can do much damage in short time frames;<br>
+The number of weakness is always growing;<br>
+Networks allow novel attack mechanisms;<br>
+Attackers can build complex attck chains;<br>
+Users are mostrly unaware of the risks;<br>
 Users are mostly careless;
 
 ------------------------------
 
 ### Main vulnerability sources:
 
-Hostile applications or bugs in applications;
-Users;
-Defective administration;
+Hostile applications or bugs in applications;<br>
+Users;<br>
+Defective administration;<br>
 Communication over uncontrolled/unknown network links
 
 ------------------------------
@@ -126,24 +126,24 @@ Communication over uncontrolled/unknown network links
 ### Perimeter Defense (minimal defense, frequently not sufficient)
 
 
-Protection against external attackers;
-Assumes that internal users are trusted and share the same policies;
-Used in domestic scenarios or small offices;
+Protection against external attackers;<br>
+Assumes that internal users are trusted and share the same policies;<br>
+Used in domestic scenarios or small offices;<br>
 Limitaions: Too simple, Doesn't protect against internal attackers
 
 ------------------------------
 
 ### Defense in Depth:
 
-Protection against internal and external attackers;
-Assumes well-defined domains across the organization;
-Limitations: Needs coordination between the diferent controls, Cost, Requires training, changes to processes and frequent audits
+Protection against internal and external attackers;<br>
+Assumes well-defined domains across the organization;<br>
+Limitations: Needs coordination between the diferent controls, Cost,<br> Requires training, changes to processes and frequent audits
 
 ------------------------------
 
 ### Zero Trust:
 
-Defense model without specific perimeters;
+Defense model without specific perimeters;<br>
 Model recommended for new systems
 
 ### Zero Trust - Principles (NCSC)
@@ -239,7 +239,7 @@ Dictionary of publicly known information security vulnerabilities and exposures
     <li>For intrusion detection</li>
 </ul>
 
-Uses common inndentifiers for the same CVEs
+Uses common indentifiers for the same CVEs
 <ul>
     <li>Enable data exchange between security products</li>
     <li>Provide a baseline index point for evaluatingn coverage of tools and services</li>
@@ -278,7 +278,7 @@ Format
 Provides common language for referring to problems
 <ul>
     <li>Facilitates data sharing among</li>
-    <li>Itrusion detection systems</li>
+    <li>Intrusion detection systems</li>
     <li>Assessment tools</li>
     <li>Vulnerability databases</li>
     <li>Researchers</li>
@@ -462,7 +462,7 @@ A single "day zero" may exist for months/years
 
 ------------------------------
 
-## CERT Computer Emergency Readinedd Team
+## CERT Computer Emergency Readiness Team
 
 **Organization ensuring that approopriate technology and systems' management practises are used to**
 <ul>
@@ -520,10 +520,10 @@ A single "day zero" may exist for months/years
     <li>Out of scope of this course</li>
 </ul>
 
-**Informatic or eltronic access**
+**Informatic or eletronic access**
 <ul>
     <li>Information-oriented contact between a subject and the object of interest: Contact through request-response dialogs</li>
-    <li>Conatct is mediated by: Computers and networks, Operating systems, applications, middleware, devices, etc...</li>
+    <li>Contact is mediated by: Computers and networks, Operating systems, applications, middleware, devices, etc...</li>
 </ul>
 
 ------------------------------
@@ -544,9 +544,9 @@ A single "day zero" may exist for months/years
     <li>Accountability -> Logging</li>
 </ul>
 
-**<p style="text-align: centered">Subject and objects: Both digital entities</p>**
+**<p style="text-align: center">Subject and objects: Both digital entities</p>**
 
-**Subjects are <u>something exhiniting activity</u>**
+**Subjects are <u>something exhibiting activity</u>**
 <ul>
     <li>Processes</li>
     <li>Computers</li>
@@ -578,7 +578,7 @@ Every program and every user of the system should opereate using the least set o
 **Each subject should have, at any given time, the exact privileges required to the assigned tasks**
 <ul>
     <li>Less privileges than the required create unsurpassable barriers</li>
-    <li>More privileges than the required create vulnerabilities: Damagin resulting from accidents or errors; Potential interactions among privileged programs; Misuse of a provileges, Unwanted information flows</li>
+    <li>More privileges than the required create vulnerabilities: Damage resulting from accidents or errors; Potential interactions among privileged programs; Misuse of a privileges, Unwanted information flows: "<u>need-to-know</u>"</li>
 </ul>
 
 ------------------------------
@@ -925,3 +925,595 @@ Every program and every user of the system should opereate using the least set o
   - <u>NO_WRITE_UP</u> (default)
   - <u>NO_READ_UP</u>
   - <u>NO_EXECUTE_UP</u>
+
+------------------------------
+
+# 4º Slide -> Operating systems
+
+![](image-21.png)
+
+------------------------------
+
+## Kernel Objectives
+
+- **Initialize devices(boot time)**
+  
+- **Virtualize the hardware**
+  - Computational model
+
+- **Enforce protection policies and provide protection mechanisms**
+  - Against involuntary mistakes
+  - Against non-authorized activities
+
+- **Provide a file system**
+  - Agnostic of the actual storage devices used
+
+------------------------------
+
+## Execution Rings
+
+- **Different levels of privilege**
+  - Forming a set of concentric rings
+  - Used by CPUs to prevent non-privileged code from running privileged opcodes: e.g., IN/OUT, TLB manipulation
+
+- **Nowadays processors have 4 rings**
+  - But OS's usually use only 2: 0 (supervisor/kernel mode); 3 (user-mode)
+
+- **Transfer of control between rings requires special gates**
+  - The ones that are used by system calls (aka syscalls): Traps
+  - Interrupts gates
+
+![](image-22.png)
+
+------------------------------
+
+## Executing Virtual Machines
+
+- **Common approach**
+  - Software-based virtualization
+  - Direct execution of guest user-mode code (ring 3)
+  - Binary translation of privileged code (ring 0): Guest OS kernels remain unchanged, but do not run directly on the host machine
+
+- **Hardware-assisted virtualization**
+  - Full virtualization: There is a ring -1 below ring 0 -> Hypervisor and kernel extensions such as Intel VT-x and AMD-V
+  - It can virtualize hardware for many ring 0 kernels: No need of binary translation; Guest OS’s run faster (almost native performance)
+
+- **Virtual machines implemente an essential security mechanism: confinement**
+  - Implement a security domain constrained for use of a small set of applications
+  - Also provide a common abstraction with common hardware: Even if the host hardware is modified
+
+- **Provide additional mechanisms**
+  - Control resources
+  - Prioritize access to resources
+  - Creation of images for analysis
+  - Fast recovery to a known state
+
+------------------------------
+
+## Computational Model
+
+- **Set of entities (objects) managed by the OS kernel**
+  - Define how applications interact with the kernel
+
+- **Examples**<br>
+◦ User identifiers<br>
+◦ Processes<br>
+◦ Virtual memory<br>
+◦ Files and file systems<br>
+◦ Communication channels<br>
+◦ Physical devices<br>
+◦ Storage<br>
+◦ Magnetic disks, optical disks, silicon disks, tapes<br>
+◦ Network interfaces<br>
+◦ Wired, wireless<br>
+◦ Human-computer interfaces<br>
+◦ Keyboards, graphical screens, text consoles, mice<br>
+◦ Serial/parallel I/O interfaces<br>
+◦ USB, Bluetooth<br>
+◦ Serial ports, parallel ports, infrared<br>
+
+------------------------------
+
+## User Identifiers (UID)
+
+- **For the OS kernel a user is a number**
+  - Established during a login operation
+  - User ID (UID)
+
+- **All activities are executed on a computer on behalf of a UID**
+  - UID allows the kernel to assert what is allowed/denied to them
+  - Linux: UID 0 is omnipotent (root): Administration activities are usually executed with UID 0
+  - macOS: UID 0 is omnipotent for management: Some binaries and activities are restricted, even for root
+  - Windows: concept of privileges: For administration, system configuration, etc.; There is no unique, well-known administrator identifier; Administration privileges can be bound to several UIDs (Usually through administration groups; Administrators, Power Users, Backup Operators)
+
+------------------------------
+
+## Group Identifiers (GID)
+
+- **OS also address group identifiers**
+  - A group is composed by zero or more users
+  - A group may be composed by other groups
+  - Group ID: Integer value (Linux, Android, macOS) or UUID (Windows)
+
+- **User may belong to multiple groups**
+  - User rights = rights of its UID + rights of its GIDs
+
+- **In Linux, activities always execute under the scope of a set of groups**
+  - 1 primary group: user to define the ownership of created files
+  - Multiple secondary groups: used to condition access to resources
+
+------------------------------
+
+## Processes
+
+- **A process defines the context of an activity**
+  - For taking security-related decisions
+  - For other purposes (e.g., scheduling)
+
+- **Security-related context**
+  - Effective Identity (eUID and eGIDs): Fundamental for enforcing access control; May be the same as the identity of the user launching the process
+  - Resources being used: Open files (Including communication channels); Reserved virtual memory areas; CPU time used, priority, affinity, namespace
+
+------------------------------
+
+## Virtual Memory
+
+- **The address space where activities take place**
+  - Have the maximum size defined by the hardware architecture
+  - Managed in small chunks named pages (4 KiB)
+
+- **Virtual Memory can be sparse**
+  - Only the pages used must be allocated
+  - Although processes always see a contiguous memory space
+
+- **Virtual Memory is mapped to RAM when actually used**
+  - At a given moment, the RAM has pages from multiple address spaces
+  - The choice of how to manage those spaces is very important (Avoid fragmentation, management memory according to their freshness)
+
+![](image-23.png)
+
+------------------------------
+
+## File System: objects
+
+- **Hierarchical structure for storing content**
+  - Provide a method for representing mount points, directories, files and links
+
+- **Mount Point**
+  - An access to the root of a specific FS
+  - Windows uses letters (A:, .. C:..)
+  - Linux, macOs, Android use any directory
+
+- **Links**
+  - Indirection mechanisms in FS
+  - Soft Links: point to another feature in any FS
+  - Hard Links: provide multiple identifiers (names) for the same content (data) in the same FS (Usually allowed only for files)
+
+- **Directory (or folder)**
+  - A hierarchical organization method (similar to a container)
+  - Can contain other directories, files, mount points, links
+  - The first (or top-most) is called by root
+
+------------------------------
+
+## File System: files
+
+- **Serve to store data on a persistent way**
+  - But longevity is given by physical support and not by the file concept ...
+  - Erasing often means marked as deleted
+
+- **Ordered sequences of bytes associated with a name**
+  - The name allows you to retrieve/reuse these bytes later
+  - Its contents can be changed, removed, or added (as well as the name)
+  - They have a protection that controls their use (Read, write, run, remove, lock, etc. permissions; The protection model depends on the file system)
+
+------------------------------
+
+## File System: security mechanisms
+
+- **Mandatory protection mechanisms**
+  - Owner
+  - Users and Groups allowed 
+  - Permissions: Read, Write, Run (Different meanings for Files and Directories)
+
+- **Discretionary protection mechanisms**
+  - User-defined specific rules
+
+- **Additional mechanisms**
+  - Implicit compression
+  - Indirection to remote resources (e.g., for OneDrive) 
+  - Signature
+  - Encryption
+
+------------------------------
+
+## Communication Channels
+
+- **Allow the exchange of data between distinct but cooperative activities**
+
+- **Essential in any current system**
+  - All applications use these mechanisms
+
+- **Processes of the same SO/machine**
+  - Pipes, UNIX Sockets, streams, etc.
+  - Communication between processes and kernel: syscalls, sockets
+
+- **Processes on different machines**
+  - TCP/IP and UDP/IP sockets
+
+------------------------------
+
+## Access Control
+
+- **An OS kernel is an access control monitor**
+  - Controls all interactions with the hardware
+  - Applications NEVER directly access resources
+  - Controls all interactions between computational model entities
+
+- **Subjects**
+  - Typically, local processes: Through the system calls API; A syscall is not an ordinary call to a function
+  - But also messages from other machines
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char** argv){
+  FILE *fp = fopen("hello.txt", "wb");
+  char* str = "hello world";
+  fwrite(str, strlen(str), 1, fp);
+  fclose(fp);
+}
+
+```
+
+```bash
+$ gcc -o main ./main
+
+$ strace ./main
+....
+openat(AT_FDCWD, "hello.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+write(3, "hello world", 11) = 11
+close(3) = 0
+...
+```
+------------------------------
+
+## Mandatory Access Control
+
+- **There are numerous cases of mandatory access control on an operating system**
+  - They are part of the logic of the computational model 
+  - They are not moldable by users and administrators: Unless they change the behavior of the kernel
+
+- **Examples on Linux**
+  - root can do everything
+  - Signals to processes can only be sent by root or the owner 
+  - Sockets AF_PACKET (RAW) can only be created by root or by processes with the CAP_NET_RAW
+
+- **Examples on macOS**
+  - root can do almost anything
+  - root cannot change binaries and directories signed by Apple
+
+------------------------------
+
+## Discritionary Access Control
+
+- **Users can set rules for access control**
+  - May be definable only by the owner/user: This limitation is itself a Mandatory Access rule
+
+- **Examples**
+  - Discretionary Access Control Lists (ACL): Expressive lists that limit access to resources Linux
+  - Linux Apparmor: Stores settings in /etc/apparmor.d with application limitations; Rules applied automatically to applications regardless of user
+  - macOS sandboxd: Applications are launched within isolated contexts (sandbox); The sandbox contains a definition of the information that enters/exits
+
+------------------------------
+
+## Protection with ACLs
+
+- **Each object has an Access Control List (ACL)**
+  - Tell me who can do what
+
+- **The ACL may be discretionary or mandatory**
+  - When it is mandatory you cannot change
+  - When it is discretionary it can be changed
+
+- **It is checked when an activity intends to manipulate the object**
+  - If the manipulation request is not authorized it is denied
+  - The SO kernel makes the ACL validations: Acts as a Reference Monitor
+
+------------------------------
+
+## Unix file protection ACLs: Fixed-structure, discretionary ACL
+
+- **Each file system object has an ACL**
+  - Binding 3 rights to 3 subjects
+  - Only the owner can update the ACL
+
+- **Rights: <u>R W X</u>**
+  - Read right / Listing right
+  - Write right / create or remove files or subdirectories
+  - Execution right / use as process’ current working directory
+
+- **Subjects**
+  - An UID (owner)
+  - A GID
+  - Others
+
+![](image-24.png)
+
+
+```bash
+[nobody@host ~]$ ls -la
+total 12
+drwxr-xr-x 2 root root 100 dez 7 21:39 .
+drwxrwxrwt 25 root  root 980 dez 7 21:39 ..
+-rw-r----- 1 root root 6 dez 7 21:42 a
+-rw-r--r-- 1 root root 6 dez 7 21:42 b
+-rw-r-x---+ 1 root root 6 dez 7 21:42 c 
+
+[nobody@host ~]$ cat a
+cat: a: Permission denied
+
+[nobody@host ~]$ cat b
+SIO_B
+[nobody@host ~]$ cat c
+SIO_C
+
+[nobody@host ~]$getfacl c
+# file: c
+# owner: root
+# group: root
+user::rw
+user:nobody:r-x
+group::r--
+mask::r-
+other::--- 
+```
+------------------------------
+
+## Windows file protection ACLs: Flexible-structure, discretionary ACL
+
+- **Each file system object has an ACL and an owner**
+  -The ACL grants 14 types of access rights to a variable-size list of subjects
+  -Owner can be an UID or a GID
+  -Owner has no special rights over the ACL
+
+- **Subjects**:
+  -Users (UIDs)
+  -Groups (GIDs): The group “Everyone” stands for anybody
+
+- **Rights**:
+  -Traverse Folder / Execute File
+  -List Folder / Read Data
+  -Read Attributes
+  -Read Extended Attributes
+  -Create Files /Write Data
+  -Create Folders / Append Data
+  -Write Attributes
+  -Write Extended Attributes
+  -Delete Subfolders and Files
+  -Delete
+  -Read Permissions
+  -Change Permissions
+  -Take Ownership
+
+------------------------------
+
+## Privilege Elevation: Set-UID
+
+- **It is used to change the UID of a process running a program stored on a Set-UID file**
+  -If the program file is owned by UID X and the set-UID ACL bit is set, then it will be executed in a process with UID X, independently of the UID of the subject that executed the program
+
+- **It is used to provide privileged programs for running administration task invoked by normal, untrusted users**
+  -Change the user’s password (passwd)
+  -Change to super-user mode (su, sudo)
+  -Mount devices (mount)
+
+- **Effective UID / Real UID**
+  - Real UID is the UID of the process creator
+  - App launcher
+  - Effective UID is the UID of the process
+  - The one that really matters for defining the rights of the process
+
+- **UID change**
+  - Ordinary application: eUID = rUID = UID of process that executed exec; eUID cannot be changed (unless = 0)
+  - Set-UID application: eUID = UID of exec’d application file, rUID = initial process UID; eUID can revert to rUID
+  - rUID cannot change
+
+- **Administration by root is not advised**
+  - One “identity”, many people
+  - Who did what?
+  - 
+- **Preferable approach**
+  - Administration role (uid = 0), many users assume it
+  - Sudoers
+  - Defined by a configuration file used by sudo
+  - 
+- **sudo is a Set-UID application with UID = 0**
+  - Appropriate logging can take place on each command run with sudo
+
+```bash
+[user@linux ~]$ ls -la /usr/sbin/sudo
+-rwsr-xr-x 1 root  root 140576 nov 23 15:04/usr/sbin/sudo] 
+[user@linux ~]$ id
+uid=1000(user) gid=1000(user) groups=1000(user),998 (sudoers)
+
+[user@linux ~] $ sudo -s
+[sudo] password for user:
+
+[root@linux ~]# id
+uid=0(root) gid=0(root) groups=0(root)
+
+[root@linux ~]# exit
+
+[user@linux ~]$ sudo id
+uid=0(root) gid=0(root) groups=0(root)
+```
+------------------------------
+
+## Linux login: Not an OS kernel operation
+
+- **A privileged login application presents a login interface for getting users’ credentials**
+  - A username/password pair
+  - Biometric data
+  - Smartcard and activation PIN
+  - 
+- **The login application validates the credentials and fetches the appropriate UID and GIDs for the user**
+  - And starts an initial user application on a process with those identifiers: In a Linux console this application is a shell
+  - When this process ends the login application reappears
+  - 
+- **Thereafter all processes created by the user have its identifiers**
+  - Inherited through forks
+
+------------------------------
+
+## Linux: from login to session processes
+
+- **The login process must be a privileged process**
+  - Has to create processes with arbitrary UID and GIDs: The ones of the entity logging in
+
+![](image-25.png)
+
+------------------------------
+
+## Login in Linux: Password validation process
+
+- **Username is used to fetch a UID/GID pair from /etc/passwd**
+  - And a set of additional GIDs in the /etc/group file
+  - 
+- **Supplied password is transformed using a digest function**
+  - Currently configurable, for creating a new user (/etc/login.conf)
+  - Its identification is stored along with the transformed password
+  - 
+- **The result is checked against a value stored in /etc/shadow**
+  - Indexed again by the username
+  - If they match, the user was correctly authenticated
+  - 
+- **File protections**
+  - /etc/passwd and /etc/group can be read by anyone: Required for UID/GID  user name / group name translations
+  - /etc/shadow can only be read by root: Protection against dictionary attacks
+
+------------------------------
+
+## Chroot mechanism
+
+- **Used to reduce the visibility of a file system**
+  - Each process descriptor has a root i-node number: From which absolute pathname resolution takes place
+  - chroot changes it to an arbitrary directory: The process’ file system view gets reduced
+
+- **Used to protect the file system from potentially problematic applications**
+  - e.g., public servers, downloaded applications
+  - But it is not bullet proof!
+
+------------------------------
+
+## Confinement: AppArmor
+
+- **Mechanism for restricting applications based on a behavior model**
+  - Requires kernel support: Linux Security Modules
+  - Focus on syscalls and their arguments
+  - Can work in complain and enforcement modes
+  - Generates entries in the system registry to audit the behavior
+- **Configuration files define allowed activities**
+  - Whitelisting
+  - By application, uploaded from a file
+  - Applications can never have more accesses than defined: Even if executed by root
+
+![](image-28.png)
+![](image-27.png)
+
+------------------------------
+
+## Confinement: Namespaces
+
+- **Allows partitioning of resources in views (namespaces)**
+  - Processes in a namespace have a restricted view of the system
+  - Activated through syscalls by a simple process: clone: Defines a namespace to migrate the process to; unshare: disassociates the process from its current context; setns: puts the process in a Namespace
+- **Types of Namespaces**
+  - Mount: Applied to mount points
+  - process id: first process has id 1
+  - network: "independent" network stack (routes, interfaces...)
+  - IPC: methods of communication between processes
+  - uts: name independence (DNS)
+  - user id: segregation of permissions
+  - cgroup: limitation of resources used (memory, cpu...)
+
+------------------------------
+
+## Confinement: Containers
+
+- **Explores namespaces to provide a virtual view of the system**
+  - Network isolation, user ids, mounts, cgroups, etc...
+- **Processes are executed under a container**
+  - A container is an applicational construction and not a kernel object
+  - Consists of an environment by composition of namespaces and cgroups
+  - Requires building bridges with the real system network interfaces, proxy processes
+- **Relevant approaches**
+  - LinuX Containers: focus on a complete virtualized environment: evolution of OpenVZ
+  - Docker: focus on running isolated applications based on a portable packet between systems: uses LXC
+  - Singularity: similar to docker, focus on HPC and multi-user sharing
+
+------------------------------
+
+# 5º Slide -> Defending an Organization
+
+## Current requirements
+1. Identify security accountable individual<br>
+  • Responsible for the Security Strategy<br>
+  • Typically called CISO: Chief Information Security Officer<br>
+  • Will be personally held accountable!<br><br>
+1. Identify contact points for the organization<br><br>
+2. Identify and track the critical assets<br>
+  • Crown Jewels<br><br>
+1. Have a security plan<br><br>
+2. Report relevant incidents and cooperate<br>
+
+## Assets: Crown Jewels Approach
+
+- **Focused on identifying and protecting the most critical assets**
+  - To the organization mission!
+
+- **What is a crown jewel?**
+  - Sensitive Data
+  - Servers
+  - Software Systems
+  - Any other equipment (HVAC, Generators…)
+  
+- **Disruption to the crown jewels will pose a serious impact to the organization mission**
+  - Objective: Protect the crown jewels
+  - and grow from there to the rest of the organization
+  - based on a risk assessment
+
+## Security Plan
+
+- **Live document describing the security posture**
+  - Allows organizations to know where they are and where they want to go
+  - Considers authentication, backups, risk, access control, policies, etc.
+  
+- **Accepted by the organization, signed by Security Principal**
+  - Periodically reviewed and improved
+
+- **Written and accepted policies implies higher maturity**
+  - Organizations frequently only have word of mouth or informal frequent practices
+
+## Incident Response and Coordination
+
+- **Incident response coordinated by CERT.PT**
+  - Relevant incidents must be reported
+ 
+- **National CSIRT Network facilitates collaboration between entities**
+  - https://www.redecsirt.pt
+
+- **Fraud/Crime incidents are reported to authorities**
+  - Unidade Nacional de Combate ao Cibercrime e à Criminalidade Tecnológica (UNC3T): unc3t@pj.pt
+
+## Security Teaming
+
+- **Security operations are frequently organized in teams**
+  - **Blue Team**: Defends an organization from malicious actors
+  - **Red Team**: Attacks an organization to help finding weak spots
+  - **Purple Team**: Mixed attack defence role
+
+- **Each team uses specific tools and methods**
