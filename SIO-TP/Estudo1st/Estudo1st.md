@@ -474,6 +474,7 @@ A single "day zero" may exist for months/years
 <ul>
     <li>One Component of the larger CERT Program</li>
     <li>A major center for internet security problems: Established in November 1988, after the "Morris Worm"; It demonstrated the growing Internet exposure to attacks</li>
+</ul>
 
 ## CSIRT Computer Security Incident Response Team
 
@@ -514,3 +515,152 @@ A single "day zero" may exist for months/years
 ## Access types
 
 **Physical access**
+<ul>
+    <li>Physical contact between a subject and the object of interest: Facility, room, network, computer, storage device, authentication, token, etc.</li>
+    <li>Out of scope of this course</li>
+</ul>
+
+**Informatic or eltronic access**
+<ul>
+    <li>Information-oriented contact between a subject and the object of interest: Contact through request-response dialogs</li>
+    <li>Conatct is mediated by: Computers and networks, Operating systems, applications, middleware, devices, etc...</li>
+</ul>
+
+------------------------------
+
+## Access control
+
+![Alt text](image-6.png)
+
+**Definition**
+<ul>
+    <li>Policies and mechanisms that mediate the access of a subject to an object</li>
+</ul>
+
+**Normal requirements**
+<ul>
+    <li>Authentication: With some Level of Assurance (LoA)</li>
+    <li>Authorization policies</li>
+    <li>Accountability -> Logging</li>
+</ul>
+
+**<p style="text-align: centered">Subject and objects: Both digital entities</p>**
+
+**Subjects are <u>something exhiniting activity</u>**
+<ul>
+    <li>Processes</li>
+    <li>Computers</li>
+    <li>Networks</li>
+</ul>
+
+**Objects are <u>the target of an action</u>**
+<ul>
+    <li>Stored data</li>
+    <li>CPU time</li>
+    <li>Memory</li>
+    <li>Processes</li>
+    <li>Computers</li>
+    <li>Networks</li>
+</ul>
+
+------------------------------
+
+## Least privilege principle
+
+Every program and every user of the system should opereate using the least set of provileges necessary to complete the job
+
+**Privilege:**
+<ul>
+    <li>Authorization to perfom a given task</li>
+    <li>Similar to access control clearance</li>
+</ul>
+
+**Each subject should have, at any given time, the exact privileges required to the assigned tasks**
+<ul>
+    <li>Less privileges than the required create unsurpassable barriers</li>
+    <li>More privileges than the required create vulnerabilities: Damagin resulting from accidents or errors; Potential interactions among privileged programs; Misuse of a provileges, Unwanted information flows</li>
+</ul>
+
+------------------------------
+
+## Access control models 
+
+![Alt text](image-8.png)
+
+**Access control matrix**
+<ul>
+    <li>Matrix with all access right for subjects relatively to objects</li>
+    <li>Conceptual organization</li>
+</ul>
+
+**ACL-based mechanisms**
+<ul>
+    <li>ACL: Access Control List</li>
+    <li>Matrix column</li>
+</ul>
+
+**List of access rights for specific subjects**
+<ul>
+    <li>Access rights can be positive or negative</li>
+    <li>Default sunjects may often be used</li>
+</ul>
+
+**Usually, ACLs are stored along with objects**
+<ul>
+    <li>e.g, for file system objects</li>
+</ul>
+
+**Capability-based mechanisms**
+<ul>
+    <li>Capability: unforgeable authorization token</li>
+    <li>Matrix row</li>
+    <li>Contains onject references and access rights</li>
+</ul>
+
+**Access granting**
+<ul>
+    <li>Transmission of capabilitiees between subjects</li>
+    <li>Mediated / non-mediated</li>
+</ul>
+
+**Usually, capabilities are kept by subjects**
+<ul>
+    <li>e.g, OAuth 2.0 access tokens</li>
+</ul>
+
+------------------------------
+
+## Access control kinds: MAC and DAC
+
+**Mandatory access control (MAC)**
+<ul>
+    <li>Fixed access control policy implemented by the access control</li>
+    <li>Access control rights cannot be tailored by subjects or objects or object owners</li>
+</ul>
+
+**Discretionary access control (DAC)**
+<ul>
+    <li>Some subjects can update rights granted or denied to other subjects for a given object</li>
+    <li>Usually this is granted to object owners and system administrators</li>
+</ul>
+
+------------------------------
+
+## Access control kinds: Role-Based Access Control (RBAC)
+
+**Not DAC or MAC**
+<ul>
+    <li>Roles are dynamically assigned to subjects</li>
+    <li>For access control it matters the role played by the subject and not the subject's identity: Identity is mostly relevant for role acess and logging</li>
+</ul>
+
+**Access control binds roles to (meaningful) operations**
+<ul>
+    <li>Operations are complex, meanigful system transactions: Not the ordinary, low-level read/write/execute actons on individual objects</li>
+    <li>Operations can involve many individual lower-level objects</li>
+</ul>
+
+------------------------------
+
+## Access control kinds: RBAC rules (1/2)
+
