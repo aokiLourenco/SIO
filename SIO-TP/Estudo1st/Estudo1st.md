@@ -49,7 +49,7 @@ Defense against non-authorized activities (adversaries)
 
 1. Domains -> A set of entities sharing similar security attributes
 Allow managing security in an aggregated manner;
-Behavior and interactions are homogenousinside the domain;
+Behavior and interactions are homogenous inside the domain;
 Domains can be organized in a flat of hierarchical manner;
 Interactions between domains are usually controlled;
 
@@ -478,3 +478,39 @@ A single "day zero" may exist for months/years
 ## CSIRT Computer Security Incident Response Team
 
 **A service organization responsible for receiving, reviewing, and responding to computer security incident reports and activity**
+<ul>
+    <li>Provides 24x7 Computer Security Incident Response Services to users, companies, government agencies or organizations</li>
+    <li>Provides a reliable and trusted single point of contact for reporting computer security incidents worldwide</li>
+    <li>CSIRT provides the means for reporting incidents and for disseminating important incident-related information</li>
+</ul>
+
+**Portuguese CSIRTs**
+<ul>
+    <li>CERT.PT: https://www.facebook.com/CentroNacionalCibersegurancaPT</li>
+    <li>National CSIRT Netwrok: https://www.redecsirt.pt/</li>
+    <li>CSIRT @ UA: https://csirt.ua.pt</li>
+</ul>
+
+
+------------------------------
+
+## Security alerts & activity trends
+
+**Vital to the fast dissemination of knowledge about new vulnerabilities**
+<ul>
+    <li>US-CERT Technical Cyber Security Alerts</li>
+    <li>US-CERT (non-technical) Cyber Security Alerts</li>
+    <li>SANS Internet Storm Center</li>
+    <li>Aka DShield (Defense Shield)</li>
+    <li>Microsoft Security Response Center</li>
+    <li>Cisco Security Center</li>
+    <li>And many others …</li>
+</ul>
+
+------------------------------
+
+# 3º Slide -> Access control models
+
+## Access types
+
+**Physical access**
